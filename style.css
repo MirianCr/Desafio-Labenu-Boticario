@@ -1,0 +1,117 @@
+
+/*Fontes do google*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/* o O seletor universal *, seleciona todos os elementos da página.*/
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*overflow-x: propriedade especifica se o conteúdo deve ser recortado, adicionado uma barra de rolagem ou exibido o conteúdo de estouro de um elemento de nível de bloco, quando ele estoura nas bordas esquerda e direita. hidden: O conteúdo é cortado - e nenhum mecanismo de rolagem é fornecido*/
+
+body {
+    overflow-x: hidden;
+    font-family: 'GM Sans', sans-serif;
+    background-color: #132235;
+    color: #6ddad3;
+    font-size: 15px; /* font-size é usada para indicar o tamanho da letra(fonte)*/
+  }
+
+.container{
+  width: 92%; /*largura*/
+  margin: auto;
+}
+nav{
+  display: flex;
+  align-items: center;
+  margin-left: 63px;
+}
+
+#cabecalho{
+  background-color: #132235;
+  display: flex;  
+  padding: 20px;
+}
+
+.quemSomos_fale{
+  text-decoration: none;    
+    padding: 20px;    
+    margin-left: 153px;
+    background-color: #0b504c;
+    color: antiquewhite;   
+    border-radius: 5px;
+ 
+}
+  
+header {
+  width: 100%;
+  min-height: 100vh; /*altura minima*/
+  background: #132235;
+  background: linear-gradient(to right, #6ddad3, #132235); /*fundo gradiente*/  
+  }
+
+header .container{
+  margin-right: 0; /*margem direita*/
+}
+header .primeiraChamada{  /*row = linha*/
+  width: 100%;
+  min-height:100vh ;
+  display: flex;/*display-flex:Quando você declara no elemento pai o display: flex você está convertendo todos os elementos filhos, os Flex Itens, para se comportarem como caixas flexíveis.*/
+  justify-content: space-between; /*justificar conteudo: Distribua os itens uniformemente.  O primeiro item está alinhado com o início,  o último está nivelado com o final*/
+  align-items:center;
+}  
+header .primeiraChamada .coluna-1{
+  width: 40%;
+} 
+header .republica-1{ /*imagem republica */
+  width: 80%; 
+  border-radius: 5px;  
+}
+
+header h1{
+  font-size: 60px;
+  font-weight:700; /*Peso da Fonte: A espessura da fonte é o “valor” colocado em sua fonte que determinará quão negrito ou claro seu texto aparecerá*/
+  color:#132235;
+}
+header p{
+  font-size:18px;
+  color:#132235;
+  margin: 15px 0;
+  margin-bottom: 40px;
+}
+header .venhaConferir{
+  text-decoration: none;
+  background-color:#0b504c;
+  color:antiquewhite;
+  letter-spacing: 1px; /*propriedade de espaçamento entre letras aumenta ou diminui o espaço entre os caracteres em um texto.*/
+  font-size: 20px;
+  padding: 20px 40px; /*botao com espaçamento*/
+  border-radius: 5px;
+}
+header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando você passa o mouse sobre eles.*/
+ background-color: #132235;
+ transition: all .3s ease;
+}
+
+/*SEÇÃO 2 CSS */
+.section-dois{
+  padding: 50px 0;
+}
+.section-dois h4{
+  font-size: 42px;
+  font-weight: 800;
+}
+
+
+
+
+
+footer img {
+  height: 45px;
+  border-radius: 45px;
+}
+
+
+
