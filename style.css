@@ -37,12 +37,11 @@ nav{
 
 .quemSomos_fale{
   text-decoration: none;    
-    padding: 20px;    
-    margin-left: 153px;
-    background-color: #0b504c;
-    color: antiquewhite;   
-    border-radius: 5px;
- 
+  padding: 20px;    
+  margin-left: 153px;
+  background-color: #0b504c;
+  color: antiquewhite;   
+  border-radius: 5px; 
 }
   
 header {
@@ -50,7 +49,7 @@ header {
   min-height: 100vh; /*altura minima*/
   background: #132235;
   background: linear-gradient(to right, #6ddad3, #132235); /*fundo gradiente*/  
-  }
+}
 
 header .container{
   margin-right: 0; /*margem direita*/
@@ -66,10 +65,11 @@ header .primeiraChamada .coluna-1{
   width: 40%;
 } 
 header .republica-1{ /*imagem republica */
+  padding: 20px;
   width: 80%; 
-  border-radius: 5px;  
+  border-radius: 30px;  
+  
 }
-
 header h1{
   font-size: 60px;
   font-weight:700; /*Peso da Fonte: A espessura da fonte é o “valor” colocado em sua fonte que determinará quão negrito ou claro seu texto aparecerá*/
@@ -83,35 +83,235 @@ header p{
 }
 header .venhaConferir{
   text-decoration: none;
-  background-color:#0b504c;
-  color:antiquewhite;
+  background-color:#0b504c;  
   letter-spacing: 1px; /*propriedade de espaçamento entre letras aumenta ou diminui o espaço entre os caracteres em um texto.*/
-  font-size: 20px;
-  padding: 20px 40px; /*botao com espaçamento*/
-  border-radius: 5px;
+  color: aliceblue;
+  border: 2px solid #0b504c; 
+  padding: 25px 35px;   /*botao com espaçamento*/  
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
 }
 header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando você passa o mouse sobre eles.*/
  background-color: #132235;
  transition: all .3s ease;
 }
 
+/*===============================================================================================================================================*/
 /*SEÇÃO 2 CSS */
 .section-dois{
   padding: 50px 0;
+  text-align: center;
 }
 .section-dois h4{
   font-size: 42px;
-  font-weight: 800;
+  font-weight: 700;
+  color: #6ddad3;
+}
+.section-dois .primeiraChamada{
+  display: flex;
+  justify-content: space-around; /*justify-content define como o navegador distribui o espaço entre e ao redor dos itens de conteúdo ao longo do eixo principal de um contêiner flexível e do eixo embutido de um contêiner de grade.*/
+  margin-top: 50px;
+}
+.section-dois .primeiraChamada img{/*imagens das logos*/
+  width: 150px;
+  filter: grayscale(100%);/*O grayscale() é uma função do CSS que modifica a imagem adicionada para as cores branco e preto */
+  cursor: pointer;/*pra ficar a maozinha do mouse = cursor especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento. */
+}
+.section-dois .primeiraChamada img:hover{
+  filter: none;/*muda de cor ao passar o mouse*/
+  transition: all .3s ease;/*Ela permite definir a transição entre dois estados de um elemento. Estados diferentes podem ser definidos usando pseudo-classes tais como :hover*/
+}
+/*===============================================================================================================================================*/
+/*SEÇÃO 3 CSS */
+.section-tres{
+  padding: 50px 0;
+}
+.section-tres .primeiraLinha{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+}
+.section-tres .primeiraLinha .col{
+  width: 50%;
+}
+.section-tres .primeiraLinha .col img{/*imagem 2 dos cadernos*/
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;  
+  
+}
+.section-tres h3{
+  font-weight: 700;
+  color: #007688;
+  margin-bottom: 15px;
+}
+.section-tres h1{
+  font-size: 62px;
+  line-height: 65px;
+  margin-bottom: 25px;
+}
+.section-tres p{
+  font-size: 18px;
+
+}
+/*===============================================================================================================================================*/
+/*SEÇÃO 4 CSS */
+.section-quatro{
+  padding: 50px 0;
+  min-height: 100vh;
+  background: #132235;
+  background: linear-gradient(to right, #6ddad3, #132235); /*fundo gradiente*/  
+  text-align: center;
+  color: #6ddad3;  
+}
+.section-quatro .primeiraLinha{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section-quatro .primeiraLinha .col{ /*dos icones*/
+  width: 24%;
+  background-color: #091d36;
+  text-align: center;
+  padding: 25px;
+  border-radius: 5px;
+}
+.section-quatro h1{
+  font-size: 42px;
+  margin:50px 0;
+  font-weight: 700;
+}
+.section-quatro .primeiraLinha .col img{
+  width: 50px;
+}
+.section-quatro h3{
+  color: #091d36;
+  font-size: 32px;
+}
+.section-quatro h2{
+  font-size: 22px;
+  margin:15px 0;
+}
+.section-quatro .primeiraLinha .col:hover{  
+  background-color: #007688;
+  transition: all .3s ease;
+  color: aliceblue;
+}
+/*===============================================================================================================================================*/
+/*SEÇÃO 5 CSS */
+.section-cinco{
+  padding: 50px 0;
+  background-color: #132235;
+  color: #6ddad3;
+}
+.section-cinco .primeiraLinha{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-cinco h2{
+  font-size: 50px;
+  color: #6ddad3;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.section-cinco a{
+  text-decoration: none;
+  background-color: #0b504c;
+  color: aliceblue;
+  border: 2px solid #0b504c; 
+  padding: 25px 35px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+.section-cinco .btn-2{
+  background-color: transparent;
+  margin-left: 15px;
+  color: aliceblue;
 }
 
-
-
-
-
+/*rodape*/
 footer img {
   height: 45px;
   border-radius: 45px;
+  border: 2px solid #0b504c;
 }
+
+/*modo responsivo para celular*/
+@media (max-width: 768px) {
+  header .nav{
+      min-height: auto;
+      padding-top: 100px;
+  }
+  header .primeiraChamada{
+      flex-direction: column;
+      min-height: auto;
+  }
+  header .primeiraChamada .col{
+      width: 100%;
+  }
+  header h1{
+      font-size: 36px;
+      line-height: 40px;
+  }
+
+/*seção2*/
+  .section-dois .primeiraChamada{
+      flex-wrap: wrap;
+  }
+  .section-dois .primeiraChamada img{
+      margin-bottom: 25px;
+  }
+  /*seção3*/
+  .section-tres .primeiraLinha{
+      flex-direction: column;
+  }
+  .section-tres .primeiraLinha .col{
+      width: 100%;
+  }
+  .section-tres h1{
+      font-size: 26px;
+      line-height: 30px;
+  }
+  /*seção4*/
+  .section-quatro h1{
+      font-size: 36px;
+      line-height: 46px;  
+  }
+  .section-quatro .primeiraLinha{
+      flex-direction: column;
+  }
+  .section-quatro .primeiraLinha .col{
+      width: 100%;
+      margin-bottom: 25px;
+  }
+  /*seção 5*/
+  .section-cinco .primeiraLinha{
+      flex-direction: column;
+  }
+  .section-cinco .primeiraLinha .col{
+      width: 100%;
+      margin-bottom: 25px;
+  }
+  .section-cinco h2{
+      font-size: 36px;
+  }
+  .section-cinco .coluna-2{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+  }
+  .section-cinco .btn-2{
+      margin-left: 0px;
+      margin-top: 25px;
+  }
+}
+
+
 
 
 
