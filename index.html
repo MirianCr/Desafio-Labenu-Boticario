@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />    
     <!--<link rel="manifest" href="package.json" />
     <link rel="manifest2" href="sandbox.config.json" /> -->
-    <!--LINK CSS-->
-    
+    <!--LINK CSS-->    
     <link href="style.css" rel="stylesheet">
     <title>F4Life-O melhor lugar</title>
 </head>
@@ -18,8 +16,8 @@
       <div id="cabecalho">     
         <nav>
           <img style= height:280px  src="assets/f4life.png" alt="imagem da logomarca F4Life" >          
-          <a href="#quemSomos" class="quemSomos_fale">Quem somos </a>
-          <a href="#faleConosco" class="quemSomos_fale">Fale Conosco</a>
+          <a href="#quemSomos" class="quemSomos">Quem somos </a>
+          <a href="#faleConosco" class="faleConosco">Fale Conosco</a>
         </nav>  
       </div>  
         <div class = "container">
@@ -28,7 +26,7 @@
               <h1>Ei! Universitário(a)!</h1>
               <h1>Você ainda não encontrou o seu cantinho?</h1>
               <p>Você merece um lugar tranquilo para estudar e que ofereça todo o conforto que você precisa. <p>A F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.</p>
-              <a href="#" class="venhaConferir">Venha conferir!</a>  
+              <button type="submit" class="venhaConferir" onclick="abrirBotao()">Venha conferir!</button>  
             </div>                 
               <div class="col coluna-2">
                 <img src="./assets/imagem-republica.jpeg" class= "republica-1" alt="imagem da republica">
@@ -94,10 +92,38 @@
                     <h2>Entenda o conceito loft</h2>
                     <p>                      
                       Lofts são ambientes integrados que deixam a casa com um toque mais cool,<br> mais moderna e aumentam o espaço do ambiente decorado. </p>
-                </div>                
+                </div>                       
             </div>
+        </div><hr> 
+<section class="section-quatro-depoimentos">
+        <div class="container">          
+          <div class="primeiraLinha"> 
+            <h3>Veja aqui o depoimento <br>de pessoas que amam<br> e recomendam a F4Life!
+             
+              
+            <p><br>F4LOVERS❤️ </p>  </h3>    
+          <div class="col">
+            <img src="assets/estudante1.jpeg" alt="Imagem estudante 1">
+            <h2>Eu recomendo!</h2>
+            <p>aaaaaaaaaaaaaaaaaaaa<br>
+              aaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaa<br>
+              <p>aaaaaaaaaaaaaaaaaaaa<br>
+                <p>aaaaaaaaaaaaaaaaaaaa<br></p>
         </div>
-      </section>
+        <div class="col">
+            <img src="assets/estudante2.jpeg" alt="imagem estudante2">
+            <h2>Eu recomendo!</h2>
+            <p>aaaaaaaaaaaaaaaaaaaa<br>
+              aaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaaa
+              aaaaaaaaaaaaaaaaaaaa<br>
+              <p>aaaaaaaaaaaaaaaaaaaa<br>
+                <p>aaaaaaaaaaaaaaaaaaaa<br></p>
+        </div>     
+      </div>
+    </div>
+</section>
+</section>
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
   <!--SECAO 5 -->
       <section class="section-cinco">
@@ -107,38 +133,37 @@
                     <h3>Achou interessante?</h3>
                     <h2>Venha conversar com a gente!</h2>
                 </div>
-                <div class="col coluna-2">
-                    <a href="#">Nosso Contato</a>
-                    <a href="#" class="btn-2">Saiba mais</a>
-                </div>
+                
             </div>
         </div>
     </section>
  
-    <!-- arrumar essa parte-->          
+    <!-- formulario -->          
           
-        <id>
-          <p>Veja aqui o depoimento de pessoas que amam e recomendam a F4Life!</p>
-        </id>
-        <section id="faleConosco">
-          <h1>Quer mais informações?</h1>
+        
+        <section id="faleConosco">      
           <div id="FormContainer">
             <form>
               <fieldset>
-                <legend>Email</legend>
-                <input type="email" name="email" id="email" value />
+                <legend>Email</legend>                
+                <input type="text" name="email"  id="email" placeholder="fulano@mail.com" />
               </fieldset>
               <fieldset>
                 <legend>Mensagem</legend>
-                <textarea name="mensagem" id="message" rows="10"></textarea>
+                <textarea name="mensagem" id="message" rows="10"  placeholder="digite sua mensagem"></textarea>
               </fieldset>
-              <button type="submit">Enviar</button>
+              <input type="submit" class="button" onclick="Enviar()" value="Enviar" ></input>
             </form>
-            <p class="formOutput" style="display: none;"></p>
-            <button class="formOutput" style="display: none;">Ok</button>
-          </div>
+            
+            </div>          
         </section>
-      <div> F4Life - O melhor lugar para ficar! </div>
+
+
+      <div class="final"> F4Life - O melhor lugar para ficar! -  &copy;2022</div>
+
+
+      
+
 
         <footer><!--rodape-->
           <a target="_blank" rel="noreferrer" href="https://twitter.com/">

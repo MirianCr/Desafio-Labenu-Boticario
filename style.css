@@ -35,7 +35,7 @@ nav{
   padding: 20px;
 }
 
-.quemSomos_fale{
+.quemSomos, .faleConosco{
   text-decoration: none;    
   padding: 20px;    
   margin-left: 153px;
@@ -91,6 +91,7 @@ header .venhaConferir{
   font-size: 18px;
   font-weight: 500;
   border-radius: 50px;
+  cursor: pointer;
 }
 header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando você passa o mouse sobre eles.*/
  background-color: #132235;
@@ -175,10 +176,14 @@ header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando
   background-color: #091d36;
   text-align: center;
   padding: 25px;
+  font-size: 30px;
+  letter-spacing: 1px;
   border-radius: 5px;
+  margin-bottom: 16%;
+    
 }
 .section-quatro h1{
-  font-size: 42px;
+  font-size: 80px;
   margin:50px 0;
   font-weight: 700;
 }
@@ -187,7 +192,7 @@ header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando
 }
 .section-quatro h3{
   color: #091d36;
-  font-size: 32px;
+  font-size: 42px;
 }
 .section-quatro h2{
   font-size: 22px;
@@ -199,11 +204,45 @@ header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando
   color: aliceblue;
 }
 /*===============================================================================================================================================*/
+/*SEÇÃO 4 depoimentos CSS */
+.section-quatro-depoimentos .primeiraLinha{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  padding: 51px;
+}
+.section-quatro-depoimentos .primeiraLinha .col{ /*dos icones*/
+  width: 24%;
+  background-color: #24262833;
+  text-align: center;
+  padding: 25px;
+  border-radius: 5px;
+}
+.section-quatro-depoimentos .primeiraLinha .col img{
+  width: 50%;
+  padding: 15px;
+  border-radius: 20px;
+}
+.section-quatro-depoimentos h3{
+  color: #091d36;
+  font-size: 42px;
+  margin-top: 174px;
+  padding: 16px;
+}
+
+
+
+
+
+
+/*===============================================================================================================================================*/
 /*SEÇÃO 5 CSS */
 .section-cinco{
   padding: 50px 0;
   background-color: #132235;
   color: #6ddad3;
+  margin-left:31%;
 }
 .section-cinco .primeiraLinha{
   width: 100%;
@@ -216,6 +255,11 @@ header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando
   color: #6ddad3;
   font-weight: 700;
   margin-top: 15px;
+  margin-left: 20px;
+}
+.section-cinco h3{
+  font-size: 42px;
+  margin-left: 175px;
 }
 .section-cinco a{
   text-decoration: none;
@@ -228,11 +272,72 @@ header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando
   font-weight: 500;
   border-radius: 50px;
 }
-.section-cinco .btn-2{
-  background-color: transparent;
-  margin-left: 15px;
-  color: aliceblue;
+
+
+
+/*formulario*/
+form{
+  padding: 78px;
+  font-size: 46px;  
+  width: 100%;
 }
+#email{
+  padding: 20px;
+}
+#message{
+  padding:20%;
+}
+
+fieldset {
+  display: grid;
+  width: 38%;
+  margin-left: 31%;
+  padding: 15px;
+}
+
+input:focus, textarea:focus {
+  /* Dar um pouco de destaque nos elementos ativos */
+  border-color: rgb(146, 35, 35);
+  border: 8px solid #6ddad3;
+}
+textarea {
+  /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+  vertical-align: top;
+
+  /* Para dar espaço suficiente para digitar algum texto */
+  height: 5em;
+
+  /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+  resize: vertical;
+}
+
+.button
+ {   
+  text-decoration: none;
+  background-color:#0b504c;  
+  letter-spacing: 1px; /*propriedade de espaçamento entre letras aumenta ou diminui o espaço entre os caracteres em um texto.*/
+  color: aliceblue;
+  border: 2px solid #0b504c; 
+  padding: 25px 35px;   /*botao com espaçamento*/  
+  font-size: 39px;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-left: 46%;
+  margin-top:10px;
+  cursor: pointer;
+}
+
+.final{
+  font-size: 20px;
+  text-align: center;
+  margin-top:13%;
+  margin-bottom: -21%;
+}
+
+
+
+
+
 
 /*rodape*/
 footer img {
@@ -240,6 +345,15 @@ footer img {
   border-radius: 45px;
   border: 2px solid #0b504c;
 }
+footer {
+  background-color: #6ddad3;
+  color: #132235;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 27%;
+}
+
 
 /*modo responsivo para celular*/
 @media (max-width: 768px) {
