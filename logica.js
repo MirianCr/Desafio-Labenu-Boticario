@@ -48,7 +48,7 @@ function verifica() {
         && substring.length <= 32
         && dominio.length >= 1
         && dominio.length <= 16) {
-        const letraMaiuscula = substring[0].toUpperCase() + substring.substr(1);
+        const letraMaiuscula = substring[0].toUpperCase( ) + substring.substr(1);
         return alert(`Obrigado pelo contato, ${letraMaiuscula}!`);
     } else {
         alert('Tamanho maximo excedido!')
