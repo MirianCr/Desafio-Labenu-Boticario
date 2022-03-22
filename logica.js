@@ -8,7 +8,7 @@ function verifica () {
   const substring = formularioEmail.email.value.substring(0, substringEmail.indexOf("@")); //pega antes do @
 
   //email invalido
-    if (formularioEmail.email.value === "" 
+     if (formularioEmail.email.value === ""
         || formularioEmail.email.value.indexOf('@') === -1
         || formularioEmail.email.value.indexOf('.') === -1) {
         alert("Por favor, informe um E-MAIL válido!");
