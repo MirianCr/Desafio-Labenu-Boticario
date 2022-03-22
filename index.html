@@ -14,8 +14,8 @@
 <noscript> You need to enable JavaScript to run this app.</noscript>
 <header>
     <div id="cabecalho">
-        <nav>
-            <img style=height:280px src="assets/f4life.png" alt="imagem da logomarca F4Life">
+        <img style=height:280px src="assets/f4life.png" alt="imagem da logomarca F4Life">
+        <nav>            
             <a href="#quemSomos" class="quemSomos">Quem somos </a>
             <a href="#faleConosco" class="faleConosco">Fale Conosco</a>
         </nav>
@@ -59,10 +59,11 @@
             <div class="col" id="quemSomos">
                 <h3>Quem somos</h3>
                 <h1>F4Life Moradias Universitárias</h1>
-                <p>Você possui alguma dúvida sobre moradias universitárias? <br>
+                <p>Você possui alguma dúvida sobre moradias universitárias? <br><br>
                     Para entender melhor, as nossas casas são exclusivas para os estudantes da própria cidade ou de
-                    outras localidades. Eles podem ficar até a conclusão da graduação. Todos sabemos que conseguir uma
-                    vaga em instituições públicas brasileiras é bem demorado e concorrido.<br>
+                    outras localidades. Eles podem ficar até a conclusão da graduação.<br><br>
+                    Todos sabemos que conseguir uma vaga em instituições públicas brasileiras é bem demorado
+                     e concorrido.<br><br>
                     Pensando nisso, a F4Life-Moradias Universitarias que é similar aos modelos de Quinto Andar e Loft,
                     realiza
                     reformas e prepara moradias para a recepção de pessoas universitárias
@@ -106,27 +107,31 @@
         <div class="container">
             <div class="primeiraLinha">
                 <h3>Veja aqui o depoimento <br>de pessoas que amam<br> e recomendam a F4Life!</h3>
-
-
-                    <p>F4LOVERS❤</p>
+                    <p class="f4"> F4LOVERS ❤</p>
 
                 <div class="col">
                     <img src="assets/estudante1.jpeg" alt="Imagem estudante 1">
                     <h2>Eu recomendo!</h2>
-                    <p>aaaaaaaaaaaaaaaaaaaa<br>
-                        aaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaaa
-                        aaaaaaaaaaaaaaaaaaaa<br>
-                    <p>aaaaaaaaaaaaaaaaaaaa<br>
-                    <p>aaaaaaaaaaaaaaaaaaaa<br></p>
+                    <p><i>Recomendo a F4Life porque é<br>
+                        uma empresa com ótimo padrão<br>
+                        de qualidade. São muito focados<br>
+                       em dar a melhor experiencia <br>
+                       para os estudantes universitários.<i>
+                           <br><br>                    
+                         José Souza - Brasilia/DF</p>
                 </div>
                 <div class="col">
                     <img src="assets/estudante2.jpeg" alt="imagem estudante2">
-                    <h2>Eu recomendo!</h2>
-                    <p>aaaaaaaaaaaaaaaaaaaa<br>
-                        aaaaaaaaaaaaaaaaaaa<br>aaaaaaaaaaaaaaaaaaaaaaa
-                        aaaaaaaaaaaaaaaaaaaa<br>
-                    <p>aaaaaaaaaaaaaaaaaaaa<br>
-                    <p>aaaaaaaaaaaaaaaaaaaa<br></p>
+                    <h2><b>Bom atendimento!</b></h2>
+
+                    <p><i>Em todas as dificuldades com uma locação<br>
+                        eles me ajudaram a resolver,seja por ligação
+                        ou pelo aplicativo da empresa.
+                        Tem um atendimento padronizado e são
+                        muito eficientes para nos atender.</i>
+                        <br><br>                        
+                    
+                    Allana Beatriz - São Paulo/SP</p>
                 </div>
             </div>
         </div>
@@ -154,14 +159,15 @@
         <form method="post" action="" name="frmEnvia">
             <fieldset>
                 <label for="email">E-mail: </label>
-                <input name="email" type="text" class="input" id="email" placeholder="Fofao"/>
+                <input name="email" type="text" class="input" id="email" placeholder="fulano@email.com"/>
             </fieldset>
             <fieldset>
                 <legend>Mensagem</legend>
-                <label for="message">
-                </label><textarea name="mensagem" id="message" rows="10" placeholder="digite sua mensagem"></textarea>
+                <label for="message"></label>
+
+                <textarea name="mensagem" id="message" rows="10" cols="10" placeholder="Digite aqui sua mensagem"></textarea>
             </fieldset>
-            <input name="submit" type="submit" value="ENVIAR" onclick="verifica()"/>
+            <input name="submit" type="submit" class="botaoEnviar" value="ENVIAR" onclick="verifica()"/>
         </form>
 
     </div>
