@@ -1,0 +1,492 @@
+/*Fontes do google*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+/* o O seletor universal *, seleciona todos os elementos da página.*/
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*overflow-x: propriedade especifica se o conteúdo deve ser recortado, adicionado uma barra de rolagem ou exibido o conteúdo de estouro de um elemento de nível de bloco, quando ele estoura nas bordas esquerda e direita. hidden: O conteúdo é cortado - e nenhum mecanismo de rolagem é fornecido*/
+
+body {
+    overflow-x: hidden;
+    font-family: 'GM Sans', sans-serif;
+    background-color: #132235;
+    color: #6ddad3;
+    font-size: 15px; /* font-size é usada para indicar o tamanho da letra(fonte)*/
+  }
+
+.container{
+  width: 92%; /*largura*/
+  margin: auto;
+}
+nav{
+  display: flex;
+  align-items: center;
+  margin-left: 35%;
+  font-size: 208%;
+  margin-left: 33%;
+  margin-right: 14%;
+}
+
+#cabecalho{
+  background-color: #132235;
+  display: flex;  
+  padding: 20px;
+}
+
+.quemSomos, .faleConosco{
+  text-decoration: none;    
+  padding: 20px;    
+  margin-left: 153px;
+  background-color: #0b504c;
+  color: antiquewhite;   
+  border-radius: 5px; 
+}
+  
+header {
+  width: 100%;
+  min-height: 100vh; /*altura minima*/
+  background: #132235;
+  background: linear-gradient(to right, #6ddad3, #132235); /*fundo gradiente*/  
+}
+
+header .container{
+  margin-right: 0; /*margem direita*/
+}
+header .primeiraChamada{  /*row = linha*/
+  width: 100%;
+  min-height:100vh ;
+  display: flex;/*display-flex:Quando você declara no elemento pai o display: flex você está convertendo todos os elementos filhos, os Flex Itens, para se comportarem como caixas flexíveis.*/
+  justify-content: space-between; /*justificar conteudo: Distribua os itens uniformemente.  O primeiro item está alinhado com o início,  o último está nivelado com o final*/
+  align-items:center;
+}  
+header .primeiraChamada .coluna-1{
+  width: 40%;
+} 
+header .republica-1{ /*imagem republica */
+  padding: 20px;
+  width: 80%; 
+  border-radius: 30px;  
+  
+}
+header h1{
+  font-size: 60px;
+  font-weight:700; /*Peso da Fonte: A espessura da fonte é o “valor” colocado em sua fonte que determinará quão negrito ou claro seu texto aparecerá*/
+  color:#132235;
+}
+header p{
+  font-size: 28px;
+  color: #132235;
+  margin: 69px 0;
+  margin-bottom: 40px;
+}
+header .venhaConferir{
+  text-decoration: none;
+  background-color:#0b504c;  
+  letter-spacing: 1px; /*propriedade de espaçamento entre letras aumenta ou diminui o espaço entre os caracteres em um texto.*/
+  color: aliceblue;
+  border: 2px solid #0b504c; 
+  padding: 25px 35px;   /*botao com espaçamento*/  
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+}
+header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando você passa o mouse sobre eles.*/
+ background-color: #132235;
+ transition: all .3s ease;
+}
+
+/*===============================================================================================================================================*/
+/*SEÇÃO 2 CSS */
+.section-dois{
+  padding: 50px 0;
+  text-align: center;
+}
+.section-dois h4{
+  font-size: 42px;
+  font-weight: 700;
+  color: #6ddad3;
+}
+.section-dois .primeiraChamada{
+  display: flex;
+  justify-content: space-around; /*justify-content define como o navegador distribui o espaço entre e ao redor dos itens de conteúdo ao longo do eixo principal de um contêiner flexível e do eixo embutido de um contêiner de grade.*/
+  margin-top: 50px;
+}
+.section-dois .primeiraChamada img{/*imagens das logos*/
+  width: 150px;
+  filter: grayscale(100%);/*O grayscale() é uma função do CSS que modifica a imagem adicionada para as cores branco e preto */
+  cursor: pointer;/*pra ficar a maozinha do mouse = cursor especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento. */
+}
+.section-dois .primeiraChamada img:hover{
+  filter: none;/*muda de cor ao passar o mouse*/
+  transition: all .3s ease;/*Ela permite definir a transição entre dois estados de um elemento. Estados diferentes podem ser definidos usando pseudo-classes tais como :hover*/
+}
+/*===============================================================================================================================================*/
+/*SEÇÃO 3 CSS */
+.section-tres{
+  padding: 50px 0;
+}
+.section-tres .primeiraLinha{
+  width: 100%;
+  display:flex;
+  justify-content: space-between;
+}
+.section-tres .primeiraLinha .col{
+  width: 50%;
+}
+.section-tres .primeiraLinha .col img{/*imagem 2 dos cadernos*/
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;  
+  
+}
+.section-tres h3{
+  font-weight: 700;
+  color: #007688;
+  margin-bottom: 15px;
+  font-size: 45px;
+}
+.section-tres h1{
+  font-size: 54px;
+    line-height: 1px;
+    margin-bottom: 29px;
+    margin-left: -61px;
+    padding: 52px;
+}
+.section-tres p{
+  font-size: 25px;
+
+}
+/*===============================================================================================================================================*/
+/*SEÇÃO 4 CSS */
+.section-quatro{
+  padding: 50px 0;
+  min-height: 100vh;
+  background: #132235;
+  background: linear-gradient(to right, #6ddad3, #132235); /*fundo gradiente*/  
+  text-align: center;
+  color: #6ddad3;  
+}
+.section-quatro .primeiraLinha {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section-quatro .primeiraLinha .col { /*dos icones*/
+  width: 24%;
+  background-color: #091d36;
+  text-align: center;
+  padding: 25px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  margin-bottom: 16%;
+    
+}
+.section-quatro h1{
+  font-size: 80px;
+  margin:50px 0;
+  font-weight: 700;
+}
+.section-quatro .primeiraLinha .col img {
+  width: 50px;
+}
+.section-quatro h3{
+  color: #091d36;
+  font-size: 42px;
+}
+.section-quatro h2{
+  font-size: 30px;
+  margin:24px 0;
+}
+.section-quatro .primeiraLinha .col:hover{  
+  background-color: #007688;
+  transition: all .3s ease;
+  color: aliceblue;
+}
+/*===============================================================================================================================================*/
+/*SEÇÃO 4 depoimentos CSS */
+.section-quatro-depoimentos .primeiraLinha{
+  width: 57%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -28%;    
+    margin-left: 14%;
+}
+.section-quatro-depoimentos .primeiraLinha .col{ /*dos icones*/
+  width: 29%;
+  background-color: #24262854;
+  text-align: center;
+  padding: -31px;
+  border-radius: 9px;
+  display: flex;
+  margin-left: -148px;  
+  margin-right: 111%;
+  margin-top: 20%;
+}
+.section-quatro-depoimentos .primeiraLinha .col img{
+  width: 91%;
+  border-radius: 51px;
+  margin-top: 4px;
+  height: 178px;  
+  margin-left: 16px;  
+  padding: -20%;
+}
+.section-quatro-depoimentos h3{
+  color: #091d36;
+    font-size: 49px;
+    display: grid;
+    margin-top: 1%;
+    text-align: center;
+    margin-left: -19%;
+    padding: 190px;
+    margin-right: 5%;
+}
+.section-quatro-depoimentos h2{
+  color: #091d36;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 192%;
+  margin-left: -122px;
+}
+
+.f4{
+  color: #091d36;
+    font-size: 35px;    
+    margin-top: 3%;
+    margin-left: -37%;
+    font-weight: 800;
+    margin-right: -16%;
+}
+p.depoimento1{
+  font-size: 19px;
+    margin-top: 245%;
+    margin-left: -90%;
+}
+p.depoimento2{
+  font-size: 19px;
+    margin-top: 242%;
+    margin-left: -105%;
+    margin-right: -19%;
+}
+
+/*===============================================================================================================================================*/
+/*SEÇÃO 5 CSS */
+.section-cinco{
+  padding: 50px 0;
+  background-color: #132235;
+  color: #6ddad3;
+  margin-left:31%;
+}
+.section-cinco .primeiraLinha{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-cinco h2{
+  font-size: 44px;
+    color: #6ddad3;
+    font-weight: 700;
+    margin-top: 15px;
+    margin-left: 3px;
+}
+.section-cinco h3{
+  font-size: 42px;
+  margin-left: 109px;
+  color:#1fb7ae;
+}
+.section-cinco a{
+  text-decoration: none;
+  background-color: #0b504c;
+  color: aliceblue;
+  border: 2px solid #0b504c; 
+  padding: 25px 35px;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+input.botaoEnviar{
+  font-size: 33px;
+    padding: 26px;
+    margin-left: 45%;
+    background-color: #0b504c;
+    color: antiquewhite;
+    border-radius: 22px;
+    margin-top: 20px;
+    cursor: pointer; 
+}
+input.botaoEnviar:hover{  
+  background-color: #007688;
+  transition: all .3s ease;
+  color: aliceblue;
+}
+
+
+
+/*formulario*/
+form{
+  padding: 78px;
+  font-size: 46px;  
+  width: 100%;
+}
+#email{
+  padding: 17px;
+  font-size: 25px;
+}
+#message{
+  font-size: 47%;
+  padding: 8px;
+}
+
+fieldset {
+  display: grid;
+  width: 38%;
+  margin-left: 31%;
+  padding: 15px;
+}
+
+input:focus, textarea:focus {
+  /* Dar um pouco de destaque nos elementos ativos */
+  border-color: rgb(146, 35, 35);
+  border-top-width: 8px;
+}
+textarea {
+  /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+  vertical-align: top;
+
+  /* Para dar espaço suficiente para digitar algum texto */
+  height: 5em;
+
+  /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+  resize: vertical;
+}
+
+.button
+ {   
+  text-decoration: none;
+  background-color:#0b504c;  
+  letter-spacing: 1px; /*propriedade de espaçamento entre letras aumenta ou diminui o espaço entre os caracteres em um texto.*/
+  color: aliceblue;
+  border: 2px solid #0b504c; 
+  padding: 25px 35px;   /*botao com espaçamento*/  
+  font-size: 39px;
+  font-weight: 500;
+  border-radius: 50px;
+  margin-left: 46%;
+  margin-top:10px;
+  cursor: pointer;
+}
+
+.final{
+  font-size: 20px;
+  text-align: center;
+  margin-top:13%;
+  margin-bottom: -21%;
+}
+
+
+
+
+
+
+/*rodape*/
+footer img {
+  height: 45px;
+  border-radius: 45px;
+  border: 2px solid #0b504c;
+}
+footer {
+  background-color: #6ddad3;
+  color: #132235;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 27%;
+}
+/*modo responsivo para celular*/
+@media (max-width: 768px) {
+  .quemSomos,
+  .faleConosco {
+    text-decoration: none;
+    padding: 12px;
+    margin-left: 19px;
+    background-color: #0b504c;
+    color: antiquewhite;
+    border-radius: 5px;
+  }
+  header .nav {
+    min-height: auto;
+    padding-top: 100px;
+  }
+  header .primeiraChamada {
+    flex-direction: column;
+    min-height: auto;
+  }
+  header .primeiraChamada .col {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 22px;
+  }
+
+  /*seção2*/
+  .section-dois .primeiraChamada {
+    flex-wrap: wrap;
+  }
+  .section-dois .primeiraChamada img {
+    margin-bottom: 25px;
+  }
+  /*seção3*/
+  .section-tres .primeiraLinha {
+    flex-direction: column;
+  }
+  .section-tres .primeiraLinha .col {
+    width: 100%;
+  }
+  .section-tres h1 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  /*seção4*/
+  .section-quatro h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .section-quatro .primeiraLinha {
+    flex-direction: column;
+  }
+  .section-quatro .primeiraLinha .col {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  /*seção 5*/
+  .section-cinco .primeiraLinha {
+    flex-direction: column;
+  }
+  .section-cinco .primeiraLinha .col {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .section-cinco h2 {
+    font-size: 36px;
+  }
+  .section-cinco .coluna-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-cinco .btn-2 {
+    margin-left: 0px;
+    margin-top: 25px;
+  }
+}
+
+
+
+
