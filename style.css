@@ -246,13 +246,12 @@ header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando
     padding: 190px;
     margin-right: 5%;
 }
-.section-quatro-depoimentos h2{
-  color: #091d36;
-  font-size: 14px;
-  font-weight: 700;
-  margin-top: 120%;
-  margin-left: -147px;
-}
+.section-quatro-depoimentos h2 {
+    color: #091d36;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 119%;
+    margin-left: -161px;}
 
 .f4{
   color: #091d36;
@@ -267,13 +266,11 @@ p.depoimento1{
     margin-top: 245%;
     margin-left: -90%;
 }
-p.depoimento2{
-  font-size: 19px;
-    margin-top: 242%;
-    margin-left: -105%;
-    margin-right: -19%;
+p.depoimento2 {
+    font-size: 29px;
+    margin-top: 151%;
+  margin-left: -94%;
 }
-
 /*===============================================================================================================================================*/
 /*SEÇÃO 5 CSS */
 .section-cinco{
