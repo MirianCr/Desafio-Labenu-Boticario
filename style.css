@@ -357,6 +357,14 @@ footer {
 
 /*modo responsivo para celular*/
 @media (max-width: 768px) {
+  .quemSomos, .faleConosco {
+    text-decoration: none;
+    padding: 12px;
+    margin-left: 19px;
+    background-color: #0b504c;
+    color: antiquewhite;
+    border-radius: 5px;
+  }
   header .nav{
       min-height: auto;
       padding-top: 100px;
@@ -369,8 +377,7 @@ footer {
       width: 100%;
   }
   header h1{
-      font-size: 36px;
-      line-height: 40px;
+      font-size: 22px;
   }
 
 /*seção2*/
