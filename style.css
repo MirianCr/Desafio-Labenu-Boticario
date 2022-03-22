@@ -172,12 +172,12 @@ header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando
   text-align: center;
   color: #6ddad3;  
 }
-.section-quatro .primeiraLinha{
+.section-quatro .primeiraLinha {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.section-quatro .primeiraLinha .col{ /*dos icones*/
+.section-quatro .primeiraLinha .col { /*dos icones*/
   width: 24%;
   background-color: #091d36;
   text-align: center;

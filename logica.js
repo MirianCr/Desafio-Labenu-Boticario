@@ -1,7 +1,7 @@
 
 ///função pro formulario
 
-function verifica() {  
+function verifica () {
   const substringEmail = document.querySelector('#email').value; //para pegar apenas user 
   var formularioEmail = document.forms[0]; //inicio forms campo email
   const dominio = formularioEmail.email.value.substring(substringEmail.indexOf("@") + 1); //pega depois do @
