@@ -213,7 +213,7 @@ header a:hover{  /*O seletor de foco : é usado para selecionar elementos quando
 /*SEÇÃO 4 depoimentos CSS */
 .section-quatro-depoimentos .primeiraLinha{
      width: 99%;
-    display: -webkit-inline-box;
+    display: inline-block;
     justify-content: space-between;
     margin-top: 10%;
     padding: 147px;
@@ -338,7 +338,7 @@ fieldset {
 input:focus, textarea:focus {
   /* Dar um pouco de destaque nos elementos ativos */
   border-color: rgb(146, 35, 35);
-  border: 8px solid #6ddad3;
+  border-top-width: 8px;
 }
 textarea {
   /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
@@ -405,6 +405,7 @@ footer {
     color: antiquewhite;
     border-radius: 5px;
   }
+
   header .nav{
       min-height: auto;
       padding-top: 100px;
@@ -467,7 +468,7 @@ footer {
       text-align: center;
   }
   .section-cinco .btn-2{
-      margin-left: 0px;
+      margin-left: 1px;
       margin-top: 25px;
   }
 }

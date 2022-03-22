@@ -1,5 +1,5 @@
 
-//função pro formulario
+///função pro formulario
 
 function verifica() {  
   const substringEmail = document.querySelector('#email').value; //para pegar apenas user 
